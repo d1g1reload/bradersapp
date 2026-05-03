@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.id.titikjemputmitra.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_order_detail"
+            app:destination="@id/navigation_order_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
+            />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_transaction_history"
+            app:destination="@id/navigation_transaction_history"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_transaction_history"
+        android:name="com.id.titikjemputmitra.ui.home.TransactionHistoryFragment"
+        android:label="Transaction History"
+        tools:layout="@layout/fragment_transaction_history"/>
+
+
+    <fragment
+        android:id="@+id/navigation_withdraw"
+        android:name="com.id.titikjemputmitra.ui.home.WithdrawFragment"
+        android:label="Withdraw"
+        tools:layout="@layout/fragment_withdraw"
+        />
+
+
+    <fragment
+        android:id="@+id/navigation_pin"
+        android:name="com.id.titikjemputmitra.ui.home.PinFragment"
+        android:label="Pin"
+        tools:layout="@layout/fragment_pin"
+        />
+
+    <fragment
+        android:id="@+id/navigation_bank_account"
+        android:name="com.id.titikjemputmitra.ui.profile.BankAccountFragment"
+        android:label="Bank Account"
+        tools:layout="@layout/fragment_bank_account"/>
+
+    <fragment
+        android:id="@+id/navigation_form_bank"
+        android:name="com.id.titikjemputmitra.ui.profile.FormBankFragment"
+        android:label="Form Bank"
+        tools:layout="@layout/fragment_form_bank"/>
+
+
+    <fragment
+        android:id="@+id/navigation_order_detail"
+        android:name="com.id.titikjemputmitra.ui.home.DetailOrderFragment"
+        android:label="Detail Pesanan"
+        tools:layout="@layout/fragment_detail_order">
+
+        <argument
+            android:name="order"
+            app:argType="com.id.titikjemputmitra.data.response.DataItemHistory"
+            app:nullable="true"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.id.titikjemputmitra.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_add_product"
+            app:destination="@id/navigation_add_product"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
+            />
+
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_detail_product"
+            app:destination="@id/navigation_product_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_product_detail"
+        android:name="com.id.titikjemputmitra.ui.product.ProductDetailFragment"
+        android:label="Detail Produk"
+        tools:layout="@layout/fragment_product_detail">
+
+        <argument
+            android:name="product"
+            app:argType="com.id.titikjemputmitra.data.response.DataItemProduct" />
+
+        <action
+            android:id="@+id/action_navigation_product_detail_to_navigation_add_product"
+            app:destination="@id/navigation_add_product"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_add_product"
+        android:name="com.id.titikjemputmitra.ui.product.FormAddFragment"
+        android:label="Tambah Produk"
+        tools:layout="@layout/fragment_form_add">
+
+        <argument
+            android:name="product"
+            app:argType="com.id.titikjemputmitra.data.response.DataItemProduct"
+            app:nullable="true"
+            />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.id.titikjemputmitra.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_driver"
+        android:name="com.id.titikjemputmitra.ui.driver.DriverRentalFragment"
+        android:label="@string/title_driver"
+        tools:layout="@layout/fragment_driver_rental">
+
+        <action
+            android:id="@+id/action_navigation_driver_to_navigation_add_driver"
+            app:destination="@id/navigation_add_driver"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_driver"
+        android:name="com.id.titikjemputmitra.ui.driver.FormAddDriverFragment"
+        android:label="Form Driver"
+        tools:layout="@layout/fragment_form_add_driver"/>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.id.titikjemputmitra.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/navigation_inbox"
+        android:name="com.id.titikjemputmitra.ui.inbox.InboxFragment"
+        android:label="Pesan Masuk"
+        tools:layout="@layout/fragment_inbox">
+
+        <action
+            android:id="@+id/action_navigation_inbox_to_navigation_chat_room"
+            app:destination="@id/navigation_chat_room"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat_room"
+        android:name="com.id.titikjemputmitra.ui.inbox.ChatRoomFragment"
+        android:label="Obrolan"
+        tools:layout="@layout/fragment_chat_room">
+
+        <argument
+            android:name="EXTRA_ROOM_ID"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="EXTRA_CUSTOMER_ID"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="EXTRA_CHAT_TITLE"
+            app:argType="string" />
+        <argument
+            android:name="EXTRA_TRX_CODE"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+
+</navigation>

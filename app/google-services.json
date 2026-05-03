@@ -1,0 +1,124 @@
+{
+  "project_info": {
+    "project_number": "497003141717",
+    "project_id": "drinotif-79b45",
+    "storage_bucket": "drinotif-79b45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:66d217890ffe6f93a592dc",
+        "android_client_info": {
+          "package_name": "com.freshloka.mitra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:c550e1a745f58559a592dc",
+        "android_client_info": {
+          "package_name": "com.id.dashcamapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:e4507cc0aa43bd41a592dc",
+        "android_client_info": {
+          "package_name": "com.id.titikjemputmitra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:8479130604ef9cfca592dc",
+        "android_client_info": {
+          "package_name": "com.id.titikpanen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:c70a35c5a459efc4a592dc",
+        "android_client_info": {
+          "package_name": "com.id.titikpanenseller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497003141717:android:8abd3912d1f20f9da592dc",
+        "android_client_info": {
+          "package_name": "id.freshloka.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBaWiQ9ViGNaB2LmyD7V9iCefyojOYCW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
